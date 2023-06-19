@@ -1,0 +1,27 @@
+.cashier {
+    padding: 50px;
+}
+
+.cashier .contain {
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width:992px) {
+    .cashier {
+        padding: 0 30px;
+    }
+    .cashier .contain {
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .cashier {
+        padding: 0 10px;
+    }
+}

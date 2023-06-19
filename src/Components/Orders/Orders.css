@@ -1,0 +1,536 @@
+.orders .contain {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 40px 80px;
+}
+
+.orders .contain .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #00c16e;
+    position: relative;
+}
+
+.orders .contain .head picture {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.orders .contain .head picture img {
+    width: 120px;
+}
+
+.orders .contain .orders-control {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    border: 2px solid #00c16e;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.orders .contain .orders-control form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.orders .contain .orders-control form>div {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 10px;
+}
+
+.orders .contain .orders-control form>div label {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.orders .contain .orders-control form>div input {
+    outline: none;
+    border: 1px solid #f9f9f9;
+    padding: 12px 40px;
+    font-size: 18px;
+    background-color: #9df5ce;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.orders .contain .orders-control form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.orders .contain button {
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: #fff;
+    transition: ease-in-out all .3s;
+    color: #00c16e;
+    cursor: pointer;
+    border: 2px solid #00c16e;
+    font-size: 20px;
+    width: 100%;
+}
+
+.orders .contain button:hover {
+    background-color: #00c16e;
+    color: #fff !important;
+}
+
+.orders .contain .orders-lists>ul {
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    position: relative;
+}
+
+.orders .contain .orders-lists>ul>li {
+    background-color: #fff;
+    border-radius: 6px;
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    box-shadow: rgba(43, 43, 43, 0.24) 0px 3px 8px;
+    transition: ease-in-out all .3s;
+    border: 2px solid #00c16e;
+    position: relative;
+}
+
+.orders .contain .orders-lists>ul>li::after {
+    content: url("../../Images/free-svg-illustration-hosting.svg");
+    position: absolute;
+    z-index: 0;
+    width: 40%;
+    bottom: 100px;
+    right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orders .contain .orders-lists>ul>li:hover {
+    border-color: transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.orders .contain .orders-lists>ul>li .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 20px;
+    background-color: #f7f7f7;
+    position: relative;
+    z-index: 10;
+}
+
+.orders .contain .orders-lists>ul>li .info div span {
+    color: #00c16e;
+}
+
+.orders .contain .orders-lists>ul>li .order-num {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0;
+    justify-content: flex-start;
+    font-size: 20px;
+    text-transform: capitalize;
+    gap: 5px;
+}
+
+.orders .contain .orders-lists>ul>li .order-num span:last-child {
+    color: #00c16e;
+}
+
+.orders .contain .orders-lists>ul>li .items {
+    display: grid;
+    align-items: flex-start;
+    justify-content: stretch;
+    padding: 20px;
+}
+
+.orders .contain .orders-lists>ul>li .items ul {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 30% 20% 18% 18%;
+    gap: 20px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.orders .contain .orders-lists>ul>li .items ul.head {
+    border-bottom: 2px solid #999;
+    padding: 5px 0;
+}
+
+.orders .contain .orders-lists>ul>li .items ul.head li {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #111;
+}
+
+.orders .contain .orders-lists>ul>li .items ul li {
+    font-size: 18px;
+    color: #00c16e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.orders .contain .orders-lists>ul>li .items ul:not(.head) li:nth-child(3)::first-letter {
+    color: #111;
+}
+
+.orders .contain .orders-lists>ul>li .cash {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+
+.orders .contain .orders-lists>ul>li .cash div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.orders .contain .orders-lists>ul>li .cash div span:last-child::first-letter {
+    color: #111;
+}
+
+.orders .contain .orders-lists>ul>li .cash div span:last-child {
+    color: #00c16e;
+}
+
+.orders .contain .orders-lists>ul h3 {
+    font-size: 30px;
+    color: #999;
+    text-align: center;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.orders .contain .orders-lists>ul>li .options {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.orders .contain .orders-lists>ul>li .options button {
+    font-size: 18px;
+    padding: 8px 30px;
+}
+
+.orders .contain .orders-lists>ul>li .options button:first-child {
+    color: red;
+    border-color: red;
+}
+
+.orders .contain .orders-lists>ul>li .options button:first-child:hover {
+    background-color: red;
+}
+
+@media (max-width:1200px) {
+    .orders .contain {
+        gap: 25px;
+        padding: 30px 60px;
+    }
+    .orders .contain .head {
+        font-size: 28px;
+    }
+    .orders .contain .head picture img {
+        width: 100px;
+    }
+    .orders .contain .orders-control {
+        padding: 18px;
+        border-radius: 5px;
+    }
+    .orders .contain .orders-control form {
+        gap: 18px;
+    }
+    .orders .contain .orders-control form {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        border-radius: 6px;
+    }
+    .orders .contain .orders-control form>div {
+        gap: 8px;
+    }
+    .orders .contain .orders-control form>div label {
+        font-size: 18px;
+    }
+    .orders .contain .orders-control form>div input {
+        padding: 10px 50px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    .orders .contain .orders-control form .btn button {
+        border-radius: 26px;
+        padding: 10px 28px;
+        font-size: 18px;
+    }
+    .orders .contain .orders-lists>ul {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    .orders .contain .orders-lists>ul>li {
+        border-radius: 5px;
+    }
+    .orders .contain .orders-lists>ul>li::after {
+        width: 35%;
+        bottom: 100px;
+        right: 15px;
+    }
+    .orders .contain .orders-lists>ul>li .info {
+        gap: 25px;
+        font-size: 18px;
+        padding: 18px;
+    }
+    .orders .contain .orders-lists>ul>li .order-num {
+        padding: 18px 18px 0;
+        font-size: 18px;
+        gap: 5px;
+    }
+    .orders .contain .orders-lists>ul>li .items {
+        padding: 18px;
+    }
+    .orders .contain .orders-lists>ul>li .items ul {
+        gap: 18px;
+        padding: 8px 0;
+    }
+    .orders .contain .orders-lists>ul>li .items ul.head {
+        padding: 4px 0;
+    }
+    .orders .contain .orders-lists>ul>li .items ul.head li {
+        font-size: 18px;
+    }
+    .orders .contain .orders-lists>ul>li .items ul li {
+        font-size: 17px;
+    }
+    .orders .contain .orders-lists>ul>li .cash {
+        padding: 18px;
+        gap: 18px;
+    }
+    .orders .contain .orders-lists>ul>li .cash div {
+        gap: 18px;
+        font-size: 20px;
+    }
+    .orders .contain .orders-lists>ul h3 {
+        font-size: 28px;
+        padding: 35px;
+    }
+}
+
+@media (max-width:992px) {
+    .orders .contain {
+        gap: 20px;
+        padding: 25px 40px;
+    }
+    .orders .contain .head {
+        font-size: 25px;
+    }
+    .orders .contain .head picture img {
+        width: 80px;
+    }
+    .orders .contain .orders-control {
+        padding: 16px;
+        border-radius: 4px;
+    }
+    .orders .contain .orders-control form {
+        gap: 16px;
+    }
+    .orders .contain .orders-control form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        border-radius: 5px;
+    }
+    .orders .contain .orders-control form>div {
+        gap: 6px;
+        width: 100%;
+    }
+    .orders .contain .orders-control form>div label {
+        font-size: 16px;
+    }
+    .orders .contain .orders-control form>div input {
+        padding: 8px 50px;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    .orders .contain .orders-control form .btn button {
+        border-radius: 20px;
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    .orders .contain .orders-lists>ul {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    .orders .contain .orders-lists>ul>li {
+        border-radius: 4px;
+    }
+    .orders .contain .orders-lists>ul>li::after {
+        width: 30%;
+        bottom: 100px;
+        right: 12px;
+    }
+    .orders .contain .orders-lists>ul>li .info {
+        gap: 20px;
+        font-size: 16px;
+        padding: 16px;
+    }
+    .orders .contain .orders-lists>ul>li .order-num {
+        padding: 16px 16px 0;
+        font-size: 16px;
+        gap: 4px;
+    }
+    .orders .contain .orders-lists>ul>li .items {
+        padding: 16px;
+    }
+    .orders .contain .orders-lists>ul>li .items ul {
+        gap: 16px;
+        padding: 7px 0;
+    }
+    .orders .contain .orders-lists>ul>li .items ul.head {
+        padding: 3px 0;
+    }
+    .orders .contain .orders-lists>ul>li .items ul.head li {
+        font-size: 16px;
+    }
+    .orders .contain .orders-lists>ul>li .items ul li {
+        font-size: 16px;
+    }
+    .orders .contain .orders-lists>ul>li .cash {
+        padding: 16px;
+        gap: 16px;
+    }
+    .orders .contain .orders-lists>ul>li .cash div {
+        gap: 16px;
+        font-size: 18px;
+    }
+    .orders .contain .orders-lists>ul h3 {
+        font-size: 25px;
+        padding: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .orders .contain {
+        gap: 18px;
+        padding: 20px 30px;
+    }
+    .orders .contain .head {
+        font-size: 20px;
+    }
+    .orders .contain .head picture img {
+        width: 60px;
+    }
+    .orders .contain .orders-control {
+        padding: 12px;
+        justify-content: center;
+        border-radius: 3px;
+    }
+    .orders .contain .orders-control form {
+        gap: 12px;
+    }
+    .orders .contain .orders-control form {
+        gap: 20px;
+        border-radius: 4px;
+    }
+    .orders .contain .orders-control form>div {
+        gap: 4px;
+    }
+    .orders .contain .orders-control form>div label {
+        font-size: 12px;
+    }
+    .orders .contain .orders-control form>div input {
+        padding: 8px 40px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+    .orders .contain .orders-control form .btn button {
+        border-radius: 16px;
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .orders .contain .orders-lists>ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+        justify-content: center;
+    }
+    .orders .contain .orders-lists>ul>li {
+        border-radius: 3px;
+    }
+    .orders .contain .orders-lists>ul>li::after {
+        width: 25%;
+        bottom: 100px;
+        right: 10px;
+    }
+    .orders .contain .orders-lists>ul>li .info {
+        gap: 18px;
+        font-size: 15px;
+        padding: 12px;
+    }
+    .orders .contain .orders-lists>ul>li .order-num {
+        padding: 12px 12px 0;
+        font-size: 15px;
+        gap: 3px;
+    }
+    .orders .contain .orders-lists>ul>li .items {
+        padding: 12px;
+    }
+    .orders .contain .orders-lists>ul>li .items ul {
+        gap: 12px;
+        padding: 5px 0;
+    }
+    .orders .contain .orders-lists>ul>li .items ul.head {
+        padding: 2px 0;
+    }
+    .orders .contain .orders-lists>ul>li .items ul.head li {
+        font-size: 15px;
+    }
+    .orders .contain .orders-lists>ul>li .items ul li {
+        font-size: 12px;
+    }
+    .orders .contain .orders-lists>ul>li .cash {
+        padding: 12px;
+        gap: 12px;
+    }
+    .orders .contain .orders-lists>ul>li .cash div {
+        gap: 12px;
+        font-size: 16px;
+    }
+    .orders .contain .orders-lists>ul h3 {
+        font-size: 20px;
+        padding: 20px;
+    }
+}

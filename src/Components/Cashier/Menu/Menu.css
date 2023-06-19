@@ -1,0 +1,551 @@
+.menu .contain {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.menu .contain .lists {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+
+/* 
+.menu .contain .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.menu .contain .head .add {
+    color: #009f4d;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: ease-in-out all .3s;
+}
+
+.menu .contain .head .add:hover {
+    cursor: pointer;
+}
+
+.menu .contain .head .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu .contain .head .search i {
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-color: #009f4d;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    transition: ease-in-out all .3s;
+    justify-content: center;
+}
+
+.menu .contain .head .search i:hover {
+    transform: scale(1.2);
+}
+
+.menu .contain .head .search i:hover {
+    cursor: pointer;
+}
+
+.menu .contain .head .search input {
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 17px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #999;
+    width: 0;
+    transition: ease-in-out all .3s;
+}
+
+.menu .contain .head .search input.active {
+    background-color: #f9f9f9;
+    width: 400px;
+} */
+
+.menu .contain .items {
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 700px;
+    scrollbar-color: #00c16e #fff;
+    scrollbar-width: thin !important;
+}
+
+.menu .contain .items::-webkit-scrollbar {
+    width: .5em;
+}
+
+.menu .contain .items::-webkit-scrollbar-thumb {
+    background-color: #009f4d;
+    outline: 1px solid #fff;
+}
+
+.menu .contain .items ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+}
+
+.menu .contain .items .item {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out all .3s;
+    gap: 20px;
+    padding: 5px;
+}
+
+
+/* .menu .contain .items ul h2.no-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+} */
+
+.menu .contain .items .item:hover {
+    cursor: pointer;
+}
+
+.menu .contain .items .item.active .info {
+    color: #009f4d !important;
+}
+
+.menu .contain .items .item picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu .contain .items .item picture::after {
+    content: "✔";
+    font-weight: 900;
+    position: absolute;
+    font-size: 15px;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    color: #fff;
+    opacity: 0;
+}
+
+.menu .contain .items .item.active picture::after {
+    border-color: #009f4d;
+    color: #009f4d !important;
+    opacity: 1;
+}
+
+.menu .contain .items .item picture img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: ease-in-out all .3s;
+}
+
+.menu .contain .items .item.active picture img {
+    border: 4px solid #009f4d;
+    color: #009f4d;
+}
+
+.menu .contain .items .item:hover picture img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transform: scale(1.1);
+}
+
+.menu .contain .items .item .info {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.menu .contain .items .item .info .name {
+    font-size: 18px;
+    font-weight: 600;
+    transition: ease-in-out all .3s;
+}
+
+.menu .contain .items .item:hover .info .name {
+    color: #009f4d;
+}
+
+.menu .contain .items .item .info .price {
+    color: #009f4d;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.menu .contain .items .no-order {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .contain .items .no-order img {
+    width: 100%;
+}
+
+.menu .contain .categories {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.menu .contain .categories ul.cats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu .contain .categories ul li {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: ease-in-out all .3s;
+    border: 5px solid #fff;
+}
+
+.menu .contain .categories ul li.active {
+    cursor: pointer;
+    border-color: #009f4d;
+    color: #009f4d;
+    background-color: #ebfff4;
+}
+
+.menu .contain .categories ul li:hover {
+    cursor: pointer;
+    border-color: #009f4d;
+    color: #009f4d;
+    background-color: #ebfff4;
+}
+
+.menu .contain .categories ul li:hover i,
+.menu .contain .categories ul li:hover .name {
+    color: #009f4d;
+}
+
+.menu .contain .categories ul li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.menu .contain .categories ul li .name {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+@media (max-width:1200px) {
+    .menu .contain {
+        gap: 28px;
+    }
+    .menu .contain .lists {
+        gap: 18px;
+        border-radius: 8px;
+    }
+    /* .menu .contain .head {
+        justify-content: space-between;
+        padding: 18px;
+        gap: 8px;
+    }
+    .menu .contain .head .add {
+        font-size: 18px;
+        gap: 4px;
+    }
+    .menu .contain .head .search {
+        gap: 8px;
+    }
+    .menu .contain .head .search i {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+    .menu .contain .head .search input {
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 22px;
+    }
+    .menu .contain .head .search input.active {
+        width: 450px;
+    } */
+    .menu .contain .items {
+        height: 550px;
+    }
+    .menu .contain .items ul {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 18px;
+        padding: 18px;
+    }
+    .menu .contain .items .item {
+        gap: 18px;
+        padding: 4px;
+    }
+    .menu .contain .items ul h2.no-items {
+        font-size: 28px;
+    }
+    .menu .contain .items .item picture::after {
+        font-size: 14px;
+        right: 8px;
+        top: 8px;
+        width: 22px;
+        height: 22px;
+    }
+    .menu .contain .items .item picture img {
+        border-radius: 8px;
+    }
+    .menu .contain .items .item.active picture img {
+        border: 3px solid #009f4d;
+    }
+    .menu .contain .items .item .info {
+        gap: 8px;
+    }
+    .menu .contain .items .item .info .name {
+        font-size: 16px;
+    }
+    .menu .contain .items .item .info .price {
+        font-size: 16px;
+    }
+    .menu .contain .categories {
+        padding-bottom: 40px;
+    }
+    .menu .contain .categories ul.cats {
+        gap: 25px;
+    }
+    .menu .contain .categories ul li {
+        padding: 8px;
+        border-radius: 4px;
+        gap: 8px;
+    }
+    .menu .contain .categories ul li i {
+        font-size: 28px;
+    }
+    .menu .contain .categories ul li .name {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:992px) {
+    .menu {
+        order: 2;
+    }
+    .menu .contain {
+        gap: 25px;
+    }
+    .menu .contain .lists {
+        gap: 16px;
+        border-radius: 6px;
+    }
+    .menu .contain .head {
+        padding: 16px;
+        gap: 6px;
+    }
+    .menu .contain .head .add {
+        font-size: 16px;
+        gap: 3px;
+    }
+    .menu .contain .head .search {
+        gap: 6px;
+    }
+    .menu .contain .head .search i {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .menu .contain .head .search input {
+        padding: 10px 18px;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+    .menu .contain .head .search input.active {
+        width: 300px;
+    }
+    .menu .contain .items {
+        height: 500px;
+    }
+    .menu .contain .items ul {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+        padding: 16px;
+    }
+    .menu .contain .items .item {
+        gap: 16px;
+        padding: 3px;
+    }
+    .menu .contain .items ul h2.no-items {
+        font-size: 25px;
+    }
+    .menu .contain .items .item picture::after {
+        font-size: 12px;
+        right: 6px;
+        top: 6px;
+        width: 20px;
+        height: 20px;
+    }
+    .menu .contain .items .item picture img {
+        border-radius: 6px;
+    }
+    .menu .contain .items .item.active picture img {
+        border: 2px solid #009f4d;
+    }
+    .menu .contain .items .item .info {
+        gap: 6px;
+    }
+    .menu .contain .items .item .info .name {
+        font-size: 15px;
+    }
+    .menu .contain .items .item .info .price {
+        font-size: 15px;
+    }
+    .menu .contain .categories {
+        padding-bottom: 35px;
+    }
+    .menu .contain .categories ul.cats {
+        gap: 20px;
+    }
+    .menu .contain .categories ul li {
+        padding: 6px;
+        border-radius: 3px;
+        gap: 6px;
+    }
+    .menu .contain .categories ul li i {
+        font-size: 25px;
+    }
+    .menu .contain .categories ul li .name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:768px) {
+    .menu .contain {
+        gap: 20px;
+    }
+    .menu .contain .lists {
+        gap: 12px;
+        border-radius: 5px;
+    }
+    .menu .contain .head {
+        padding: 12px;
+        gap: 5px;
+    }
+    .menu .contain .head .add {
+        font-size: 12px;
+        gap: 2px;
+    }
+    .menu .contain .head .search {
+        gap: 5px;
+    }
+    .menu .contain .head .search i {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .menu .contain .head .search input {
+        padding: 10px 18px;
+        font-size: 10px;
+        border-radius: 18px;
+    }
+    .menu .contain .head .search input.active {
+        width: 100%;
+    }
+    .menu .contain .items {
+        height: 400px;
+    }
+    .menu .contain .items ul {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+    .menu .contain .items .item {
+        gap: 12px;
+        padding: 2px;
+    }
+    .menu .contain .items ul h2.no-items {
+        font-size: 20px;
+    }
+    .menu .contain .items .item picture::after {
+        font-size: 12px;
+        right: 5px;
+        top: 5px;
+        width: 18px;
+        height: 18px;
+    }
+    .menu .contain .items .item picture img {
+        border-radius: 5px;
+    }
+    .menu .contain .items .item .info {
+        gap: 5px;
+    }
+    .menu .contain .items .item .info .name {
+        font-size: 12px;
+    }
+    .menu .contain .items .item .info .price {
+        font-size: 12px;
+    }
+    .menu .contain .categories {
+        padding-bottom: 0px;
+    }
+    .menu .contain .categories ul.cats {
+        gap: 18px;
+    }
+    .menu .contain .categories ul li {
+        padding: 5px;
+        border-radius: 2px;
+        gap: 5px;
+    }
+    .menu .contain .categories ul li i {
+        font-size: 20px;
+    }
+    .menu .contain .categories ul li .name {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,620 @@
+.holds .contain {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 40px 80px;
+}
+
+.holds .contain .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #00c16e;
+    position: relative;
+}
+
+.holds .contain .head picture {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.holds .contain .head picture img {
+    width: 100px;
+}
+
+.holds .contain .holds-control {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    border: 2px solid #00c16e;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.holds .contain .holds-control form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.holds .contain .holds-control form>div {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 10px;
+}
+
+.holds .contain .holds-control form>div label {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.holds .contain .holds-control form>div input {
+    outline: none;
+    border: 1px solid #f9f9f9;
+    padding: 12px 40px;
+    font-size: 18px;
+    background-color: #9df5ce;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.holds .contain .holds-control form .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.holds .contain button {
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: #fff;
+    transition: ease-in-out all .3s;
+    color: #00c16e;
+    cursor: pointer;
+    border: 2px solid #00c16e;
+    font-size: 20px;
+    width: 100%;
+}
+
+.holds .contain button:hover {
+    background-color: #00c16e;
+    color: #fff !important;
+}
+
+.holds .contain .holds-lists>ul {
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    position: relative;
+}
+
+.holds .contain .holds-lists>ul>li {
+    background-color: #fff;
+    border-radius: 6px;
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    box-shadow: rgba(43, 43, 43, 0.24) 0px 3px 8px;
+    transition: ease-in-out all .3s;
+    border: 2px solid #00c16e;
+    position: relative;
+}
+
+.holds .contain .holds-lists>ul>li::after {
+    content: url("../../Images/free-svg-illustration-hosting.svg");
+    position: absolute;
+    z-index: 0;
+    width: 40%;
+    bottom: 100px;
+    right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.holds .contain .holds-lists>ul>li:hover {
+    border-color: transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.holds .contain .holds-lists>ul>li .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 20px;
+    background-color: #f7f7f7;
+    position: relative;
+    z-index: 10;
+    border-radius: 6px 6px 0;
+}
+
+.holds .contain .holds-lists>ul>li .info div span {
+    color: #00c16e;
+}
+
+.holds .contain .holds-lists>ul>li .hold-num {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0;
+    justify-content: flex-start;
+    font-size: 20px;
+    text-transform: capitalize;
+    gap: 5px;
+}
+
+.holds .contain .holds-lists>ul>li .hold-num span:last-child {
+    color: #00c16e;
+}
+
+.holds .contain .holds-lists>ul>li .items {
+    display: grid;
+    align-items: flex-start;
+    justify-content: stretch;
+    padding: 20px;
+}
+
+.holds .contain .holds-lists>ul>li .items ul {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 30% 20% 18% 18%;
+    gap: 20px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.holds .contain .holds-lists>ul>li .items ul.head {
+    border-bottom: 2px solid #999;
+    padding: 5px 0;
+}
+
+.holds .contain .holds-lists>ul>li .items ul.head li {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #111;
+}
+
+.holds .contain .holds-lists>ul>li .items ul li {
+    font-size: 18px;
+    color: #00c16e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.holds .contain .holds-lists>ul>li .items ul:not(.head) li:nth-child(3)::first-letter {
+    color: #111;
+}
+
+.holds .contain .holds-lists>ul>li .cash {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+
+.holds .contain .holds-lists>ul>li .cash div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.holds .contain .holds-lists>ul>li .cash div span:last-child::first-letter {
+    color: #111;
+}
+
+.holds .contain .holds-lists>ul>li .cash div span:last-child {
+    color: #00c16e;
+}
+
+.holds .contain .holds-lists>ul h3 {
+    font-size: 30px;
+    color: #999;
+    text-align: center;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.holds .contain .holds-lists>ul>li .options {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.holds .contain .holds-lists>ul>li .options button {
+    font-size: 18px;
+    padding: 8px 30px;
+}
+
+.holds .contain .holds-lists>ul>li .options button:first-child {
+    color: red;
+    border-color: red;
+}
+
+.holds .contain .holds-lists>ul>li .options button:first-child:hover {
+    background-color: red;
+}
+
+@media (max-width:1200px) {
+    .holds .contain {
+        gap: 25px;
+        padding: 30px 60px;
+    }
+    .holds .contain .head {
+        font-size: 28px;
+    }
+    .holds .contain .head picture img {
+        width: 100px;
+    }
+    .holds .contain .holds-control {
+        padding: 18px;
+        border-radius: 5px;
+    }
+    .holds .contain .holds-control form {
+        gap: 18px;
+    }
+    .holds .contain .holds-control form {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        border-radius: 6px;
+    }
+    .holds .contain .holds-control form>div {
+        gap: 8px;
+    }
+    .holds .contain .holds-control form>div label {
+        font-size: 18px;
+    }
+    .holds .contain .holds-control form>div input {
+        padding: 10px 50px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    .holds .contain .holds-control form .btn button {
+        border-radius: 26px;
+        padding: 10px 28px;
+        font-size: 18px;
+    }
+    .holds .contain .holds-lists>ul {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 25px;
+    }
+    .holds .contain .holds-lists>ul>li {
+        border-radius: 5px;
+    }
+    .holds .contain .holds-lists>ul>li::after {
+        width: 35%;
+        bottom: 100px;
+        right: 15px;
+    }
+    .holds .contain .holds-lists>ul>li .info {
+        gap: 28px;
+        font-size: 18px;
+        padding: 18px;
+        border-radius: 5px 5px 0;
+    }
+    .holds .contain .holds-lists>ul>li .hold-num {
+        padding: 18px 18px 0;
+        font-size: 18px;
+        gap: 5px;
+    }
+    .holds .contain .holds-lists>ul>li .items {
+        padding: 18px;
+    }
+    .holds .contain .holds-lists>ul>li .items ul {
+        gap: 18px;
+        padding: 8px 0;
+    }
+    .holds .contain .holds-lists>ul>li .items ul.head {
+        padding: 4px 0;
+    }
+    .holds .contain .holds-lists>ul>li .items ul.head li {
+        font-size: 18px;
+    }
+    .holds .contain .holds-lists>ul>li .items ul li {
+        font-size: 17px;
+    }
+    .holds .contain .holds-lists>ul>li .cash {
+        padding: 18px;
+        gap: 18px;
+    }
+    .holds .contain .holds-lists>ul>li .cash div {
+        gap: 18px;
+        font-size: 20px;
+    }
+    .holds .contain .holds-lists>ul>li .options button {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+    .holds .contain .holds-lists>ul h3 {
+        font-size: 28px;
+        padding: 35px;
+    }
+}
+
+@media (max-width:992px) {
+    .holds .contain {
+        gap: 20px;
+        padding: 25px 40px;
+    }
+    .holds .contain .head {
+        font-size: 25px;
+    }
+    .holds .contain .head picture img {
+        width: 80px;
+    }
+    .holds .contain .holds-control {
+        padding: 16px;
+        border-radius: 4px;
+    }
+    .holds .contain .holds-control form {
+        gap: 16px;
+    }
+    .holds .contain .holds-control form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        border-radius: 5px;
+    }
+    .holds .contain .holds-control form>div {
+        gap: 6px;
+        width: 100%;
+    }
+    .holds .contain .holds-control form>div label {
+        font-size: 16px;
+    }
+    .holds .contain .holds-control form>div input {
+        padding: 8px 50px;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    .holds .contain .holds-control form .btn button {
+        border-radius: 20px;
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    .holds .contain .holds-lists>ul {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    .holds .contain .holds-lists>ul>li {
+        border-radius: 4px;
+    }
+    .holds .contain .holds-lists>ul>li::after {
+        width: 30%;
+        bottom: 100px;
+        right: 12px;
+    }
+    .holds .contain .holds-lists>ul>li .info {
+        gap: 20px;
+        font-size: 16px;
+        padding: 16px;
+    }
+    .holds .contain .holds-lists>ul>li .hold-num {
+        padding: 16px 16px 0;
+        font-size: 16px;
+        gap: 4px;
+    }
+    .holds .contain .holds-lists>ul>li .items {
+        padding: 16px;
+    }
+    .holds .contain .holds-lists>ul>li .items ul {
+        gap: 16px;
+        padding: 7px 0;
+    }
+    .holds .contain .holds-lists>ul>li .items ul.head {
+        padding: 3px 0;
+    }
+    .holds .contain .holds-lists>ul>li .items ul.head li {
+        font-size: 16px;
+    }
+    .holds .contain .holds-lists>ul>li .items ul li {
+        font-size: 16px;
+    }
+    .holds .contain .holds-lists>ul>li .cash {
+        padding: 16px;
+        gap: 16px;
+    }
+    .holds .contain .holds-lists>ul>li .cash div {
+        gap: 16px;
+        font-size: 18px;
+    }
+    .holds .contain .holds-lists>ul h3 {
+        font-size: 25px;
+        padding: 30px;
+    }
+    .holds .contain .holds-lists>ul>li .options button {
+        font-size: 15px;
+        padding: 7px 16px;
+    }
+}
+
+@media (max-width:768px) {
+    .holds .contain {
+        gap: 18px;
+        padding: 20px 30px;
+    }
+    .holds .contain .head {
+        font-size: 20px;
+    }
+    .holds .contain .head picture img {
+        width: 60px;
+    }
+    .holds .contain .holds-control {
+        padding: 12px;
+        justify-content: center;
+        border-radius: 3px;
+    }
+    .holds .contain .holds-control form {
+        gap: 12px;
+    }
+    .holds .contain .holds-control form {
+        gap: 20px;
+        border-radius: 4px;
+    }
+    .holds .contain .holds-control form>div {
+        gap: 4px;
+    }
+    .holds .contain .holds-control form>div label {
+        font-size: 12px;
+    }
+    .holds .contain .holds-control form>div input {
+        padding: 8px 40px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+    .holds .contain .holds-control form .btn button {
+        border-radius: 16px;
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .holds .contain .holds-lists>ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+        justify-content: center;
+    }
+    .holds .contain .holds-lists>ul>li {
+        border-radius: 3px;
+    }
+    .holds .contain .holds-lists>ul>li::after {
+        width: 25%;
+        bottom: 100px;
+        right: 10px;
+    }
+    .holds .contain .holds-lists>ul>li .info {
+        gap: 18px;
+        font-size: 15px;
+        padding: 12px;
+    }
+    .holds .contain .holds-lists>ul>li .hold-num {
+        padding: 12px 12px 0;
+        font-size: 15px;
+        gap: 3px;
+    }
+    .holds .contain .holds-lists>ul>li .items {
+        padding: 12px;
+    }
+    .holds .contain .holds-lists>ul>li .items ul {
+        gap: 12px;
+        padding: 5px 0;
+    }
+    .holds .contain .holds-lists>ul>li .items ul.head {
+        padding: 2px 0;
+    }
+    .holds .contain .holds-lists>ul>li .items ul.head li {
+        font-size: 15px;
+    }
+    .holds .contain .holds-lists>ul>li .items ul li {
+        font-size: 12px;
+    }
+    .holds .contain .holds-lists>ul>li .cash {
+        padding: 12px;
+        gap: 12px;
+    }
+    .holds .contain .holds-lists>ul>li .cash div {
+        gap: 12px;
+        font-size: 16px;
+    }
+    .holds .contain .holds-lists>ul h3 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .holds .contain .holds-lists>ul>li .options button {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+}
+
+@media (max-width:640px) {
+    .holds .contain {
+        gap: 16px;
+        padding: 20px 20px;
+    }
+    .holds .contain .head {
+        font-size: 18px;
+    }
+    .holds .contain .head picture img {
+        width: 50px;
+    }
+    .holds .contain .holds-control {
+        padding: 10px;
+        border-radius: 2px;
+    }
+    .holds .contain .holds-control form {
+        gap: 10px;
+    }
+    .holds .contain .holds-control form {
+        gap: 18px;
+        border-radius: 3px;
+    }
+    .holds .contain .holds-control form>div {
+        gap: 3px;
+    }
+    .holds .contain .holds-control form>div label {
+        font-size: 10px;
+    }
+    .holds .contain .holds-control form>div input {
+        padding: 8px 30px;
+        font-size: 10px;
+        border-radius: 2px;
+    }
+    .holds .contain .holds-control form .btn button {
+        border-radius: 16px;
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+    .holds .contain .holds-lists>ul {
+        gap: 16px;
+    }
+    .holds .contain .holds-lists>ul>li {
+        border-radius: 3px;
+    }
+    .holds .contain .holds-lists>ul>li .info {
+        gap: 18px;
+        font-size: 15px;
+        padding: 12px;
+    }
+    .holds .contain .holds-lists>ul>li .hold-num {
+        padding: 10px 10px 0;
+        font-size: 15px;
+    }
+    .holds .contain .holds-lists>ul>li .items ul {
+        gap: 10px;
+    }
+    .holds .contain .holds-lists>ul>li .cash {
+        padding: 10px;
+        gap: 10px;
+    }
+    .holds .contain .holds-lists>ul>li .cash div {
+        gap: 12px;
+        font-size: 15px;
+    }
+    .holds .contain .holds-lists>ul h3 {
+        font-size: 18px;
+        padding: 18px;
+    }
+}

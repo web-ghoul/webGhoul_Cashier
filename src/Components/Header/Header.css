@@ -1,0 +1,165 @@
+.layout {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+header .contain {
+    background-color: var(--main-color);
+    color: var(--w-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: var(--box);
+}
+
+header .contain .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--w-color);
+    gap: 5px;
+}
+
+header .contain .home i {
+    color: var(--w-color);
+    font-size: 30px;
+    transition: var(--trans);
+    transform: translateY(5px);
+}
+
+header .contain h1 {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+header .contain .home:hover i {
+    transform: translateY(0px);
+}
+
+header .contain .links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .contain .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--w-color);
+}
+
+header .contain .link span {
+    text-decoration: none;
+}
+
+header .contain .link i {
+    transition: var(--trans);
+    color: var(--b-color);
+    transform: translateY(2px);
+    font-size: 25px;
+}
+
+header .contain .link:hover i {
+    color: var(--w-color);
+    transform: translateY(0);
+}
+
+@media (max-width:1200px) {
+    header .contain {
+        padding: 18px;
+    }
+    header .contain .home {
+        gap: 4px;
+    }
+    header .contain .home i {
+        font-size: 25px;
+    }
+    header .contain h1 {
+        font-size: 25px;
+    }
+    header .contain .link {
+        gap: 4px;
+        font-size: 20px;
+    }
+    header .contain .link i {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:992px) {
+    header .contain {
+        padding: 16px;
+    }
+    header .contain .home {
+        gap: 3px;
+    }
+    header .contain .home i {
+        font-size: 22px;
+    }
+    header .contain h1 {
+        font-size: 22px;
+    }
+    header .contain .link {
+        gap: 3px;
+        font-size: 18px;
+    }
+    header .contain .link i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    header .contain {
+        padding: 12px;
+    }
+    header .contain .home {
+        gap: 2px;
+    }
+    header .contain .home i {
+        font-size: 20px;
+    }
+    header .contain h1 {
+        font-size: 20px;
+    }
+    header .contain .link {
+        gap: 2px;
+        font-size: 16px;
+    }
+    header .contain .link i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:640px) {
+    header .contain {
+        padding: 12px 20px;
+        gap: 10px;
+    }
+    header .contain .home {
+        gap: 2px;
+    }
+    header .contain .home i {
+        font-size: 16px;
+    }
+    header .contain h1 {
+        font-size: 16px;
+    }
+    header .contain .links {
+        gap: 10px;
+    }
+    header .contain .link {
+        gap: 1px;
+        font-size: 12px;
+    }
+    header .contain .link i {
+        font-size: 12px;
+    }
+}
